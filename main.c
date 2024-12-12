@@ -25,8 +25,8 @@ void setup_pins() {
     PORTD_GPCLR = 0x003F0100;// Configure Port D pin 0 to 4 as GPIO
     GPIOD_PDDR = 0x0000003F; //Set Port D [0:5] as output
 
-	PORTB_PCR3 = 0x100; // Configure Port B pin 3 as GPIO
-	GPIOB_PDDR |= (0 << 3); // Set Port B pin 3 as input
+    PORTB_PCR3 = 0x100; // Configure Port B pin 3 as GPIO
+    GPIOB_PDDR |= (0 << 3); // Set Port B pin 3 as input
 
     // FTM3 configuration
     FTM3_MODE = 0x5; // Enable FTM3
